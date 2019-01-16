@@ -1,0 +1,42 @@
+<%- include('../includes/start.ejs') %>
+</head>
+
+<body>
+    <h1>Classic Yacht Register</h1>
+    <hr>
+    <% if (user) { %>
+    <h2>
+        <%= user.userinfo.name %>
+        <span> | </span>
+        <a href="logout">Logout</a>
+    </h2>
+    <% } else { %>
+    <h2>
+        <a href="login">Login</a>
+    </h2>
+    <% } %>
+    <hr>
+    <main>
+        <% if (yachts.length > 0) { %>
+        <div class="grid">
+            <% for (let yacht of yachts) { %>
+            <article>
+                <header>
+                    <h1>
+                        <%= yacht.currentName %>
+                    </h1>
+                </header>
+                <div>
+                    <p>
+                        <%= yacht.description %>
+                    </p>
+                </div>
+            </article>
+            <% } %>
+        </div>
+        <% } else { %>
+        <h1>No classic yachts found!</h1>
+        <% } %>
+    </main>
+
+    <%- include('../includes/end.ejs') %>
