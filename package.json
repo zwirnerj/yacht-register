@@ -1,0 +1,34 @@
+{
+  "name": "yachtregister",
+  "version": "1.0.0",
+  "description": "Classic Yatch Register",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwirnerj/yacht-register.git"
+  },
+  "author": "zwirnerj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwirnerj/yacht-register/issues"
+  },
+  "homepage": "https://github.com/zwirnerj/yacht-register#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "@okta/oidc-middleware": "^1.0.2",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
+  }
+}
